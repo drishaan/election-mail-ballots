@@ -2,6 +2,7 @@ import requests
 import json
 from bs4 import BeautifulSoup
 
+# Source for MI mail-in ballot counts
 url = 'https://electproject.github.io/Early-Vote-2020G/MI.html'
 
 r = requests.get(url)
@@ -35,7 +36,7 @@ lastdict = {
     'counties': ballots_by_county
 }
 
-#Now get overall US data
+# Now get overall US data
 url = "https://electproject.github.io/Early-Vote-2020G/index.html"
 
 r = requests.get(url)
