@@ -23,6 +23,7 @@ accepted_ballot_count = raw_data[2]
 
 ballots_by_county = {}
 
+# Group balloot counts with associated county
 for i in range(len(counties)):
     ballot_dict = {
         'req': requested_ballot_count[i],
