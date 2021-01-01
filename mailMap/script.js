@@ -262,7 +262,7 @@ function numberWithCommas(x) {
 }
 
 d3.json("https://raw.githubusercontent.com/deldersveld/topojson/master/countries/us-states/MI-26-michigan-counties.json").then(function (mich) {
-    var url = "https://election-site-1.s3.us-east-2.amazonaws.com/maildata";
+    var url = "REDACTED";
     d3.json(url)
         .then(function(data) {
             currDate = data.mi.date
