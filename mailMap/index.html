@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width" name="viewport"/>
+  <link charset="utf-8" href="mapStyle.css" media="screen" rel="stylesheet" title="no title" type="text/css"/>
+  <!-- jquery -->
+  <script crossorigin="anonymous" src="https://code.jquery.com/jquery-3.3.1.min.js">
+  </script>
+  <!-- popper -->
+  <script crossorigin="anonymous" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+  </script>
+  <!-- bootstrap -->
+  <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" rel="stylesheet"/>
+  <script crossorigin="anonymous" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+  </script>
+  <script src="https://pym.nprapps.org/pym.v1.min.js"></script>
+  <title>
+   Michigan Mail In Ballots
+  </title>
+ </head>
+ <body>
+  <div class="centerbox">
+   <div class="title">
+   </div>
+   <div class="mapbox" id="themap">
+    <svg height="400" width="400">
+    </svg>
+    <p class="credit">
+     <span id="creditDate">
+     </span>
+     <a href="https://electproject.github.io/Early-Vote-2020G/MI.html" target="_blank">
+      (Source)
+     </a>
+    </p>
+    <div class="controlbox">
+     <script src="https://unpkg.com/topojson@3">
+     </script>
+     <script src="https://d3js.org/d3.v5.min.js">
+     </script>
+     <script charset="utf-8" src="./script.js">
+     </script>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

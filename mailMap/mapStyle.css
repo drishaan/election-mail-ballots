@@ -1,0 +1,136 @@
+.counties {
+    fill: white;
+  }
+  
+  
+  .borders {
+    fill: none;
+    stroke: black;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    pointer-events: none;
+  }
+  
+  .county-border {
+    stroke-width: 0.5;
+    stroke: white;
+  }
+  
+  .state-border {
+    stroke-width: 1;
+  }
+  
+  .selected-border {
+    stroke-width: 2;
+  }
+  
+  html, body {
+    overflow: hidden;
+  }
+  
+  body {
+    width: 100%;
+    /*height: auto;*/
+    background-color: transparent;
+  }
+  
+  /* .content {
+    height: 610px;
+    overflow-y: hidden;
+  } */
+  
+  .chart{
+    font-size: x-small;
+    /* height: 75px; */
+  }
+  
+  .centerbox {
+    width: 400px;
+    margin: 0 auto;
+  }
+  
+  .lowerbox {
+    margin-top: 0px;
+    width: 100%;
+  }
+  
+  .btn:focus {
+    outline: none;
+  }
+  
+  .mapbox {
+    position: relative;
+  }
+  
+  .controlbox {
+    position: absolute;
+    top: 10px;
+    left: 60px;
+    display: none;
+    width: 200px;
+    height: 0px;
+    /*width: 150px;
+    height: 200px;
+    border: 2px solid black;
+    display: inline-block;*/
+  }
+  /*
+  .controlbox h5 {
+    float: right;
+    margin-top:;
+  }*/
+  .title {
+    text-align: center;
+  }
+  
+  .title h3,h4 {
+    margin-bottom: 0.1rem;
+  }
+
+  div.tooltip {
+    position: absolute;
+    width: 150px;
+    text-align: center;
+    padding: 6px;
+    font-size: 15px;
+    background: #FFFFFF;
+    border: 1px solid #989898;
+    pointer-events: none;
+  }
+  
+  .credit {
+    font-size: x-small;
+    text-align: right;
+    padding-right: 10px;
+  }
+
+  @media only screen and (max-width: 350px) {
+    .credit {
+      padding-right: 100px;
+    }
+    .title{
+      text-align: left;
+      padding-left: 20px;
+    }
+  }
+  
+  .controlbox select {
+    display: block;
+    margin-top: 4px;
+    float: right;
+  }
+  
+  .controlbox .btn-group {
+    float: right;
+  }
+  
+  .prop-desc {
+    font-size: 12px;
+    width: 100%;
+    display: inline-block;
+    color: darkgray;
+  }
+  
+  .selected-circle {
+    pointer-events: none;
+  }
